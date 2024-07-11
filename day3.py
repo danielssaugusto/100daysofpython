@@ -1,0 +1,8 @@
+nameFood = input("Name a food: ")
+namePlant = input("Name a type of plant: ")
+nameCooking = input("Name a method of cooking: ")
+nameBurned = input("What word describes burned food?: ")
+nameDIY = input("Name a DIY item: ")
+print()
+print("MENU")
+print(nameCooking, nameFood, "with", nameBurned, namePlant, "on a bed of", nameDIY)

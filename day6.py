@@ -42,17 +42,23 @@ def secure_login():
 
 
 def seasons():
-    season = input("\nWhat is your favorite season? ")
-    if season == "spring":
-        print("Ah! The birds are chirping and flowers blooming.\n")
-    elif season == "summer":
-        print("Catch some sun and cool off with a lemonade.\n")
-    elif season == "autumn":
-        print("The leaves are changing and the air is crisp. Enjoy!\n")
-    elif season == "winter":
-        print("Stay warm by the fire and watch the snow fall.\n")
-    else: 
-        print("I don't know that season. Please try again.\n")
+    while True:
+        season = input("\nWhat is your favorite season? ")
+        if season == "spring":
+            print("Ah! The birds are chirping and flowers blooming.\n")
+            break
+        elif season == "summer":
+            print("Catch some sun and cool off with a lemonade.\n")
+            break
+        elif season == "autumn":
+            print("The leaves are changing and the air is crisp. Enjoy!\n")
+            break
+        elif season == "winter":
+            print("Stay warm by the fire and watch the snow fall.\n")
+            break
+        else: 
+            print("I don't know that season. Please try again.\n")
+            continue
 
 
 def main():
